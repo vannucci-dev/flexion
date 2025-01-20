@@ -1,19 +1,20 @@
 import React from "react";
 import styles from "./header.module.css";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <a href="#home" className={styles.navLink}>
+        <Link href="/" className={styles.navLink}>
           Home
-        </a>
-        <a href="#workouts" className={styles.navLink}>
+        </Link>
+        <Link href="/workout" className={styles.navLink}>
           Workouts
-        </a>
-        <a href="#community" className={styles.navLink}>
+        </Link>
+        <Link href="/coach" className={styles.navLink}>
           AI Pose Coach
-        </a>
+        </Link>
       </nav>
       <button className={styles.loginBtn}>Login</button>
     </header>
